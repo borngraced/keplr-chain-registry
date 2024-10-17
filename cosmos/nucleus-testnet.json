@@ -1,0 +1,42 @@
+ {
+      chainId: "nucleus-3",
+      chainName: "Nucleus Test",
+      rpc: "https://nucleus-rpc.bravo.komodo.earth",
+      rest: "https://nucleus-api.bravo.komodo.earth",
+     "chainSymbolImageUrl": "https://raw.githubusercontent.com/chainapsis/keplr-chain-registry/main/images/nucleus-test/chain.png",
+      stakeCurrency: {
+        coinDenom: “nucl”,
+        coinMinimalDenom: "unucl",
+        coinDecimals: 6,
+      },
+      bip44: {
+        coinType: 1,
+      },
+      bech32Config: {
+        bech32PrefixAccAddr: "nuc",
+        bech32PrefixAccPub: "nucpub",
+        bech32PrefixValAddr: "nucvaloper",
+        bech32PrefixValPub: "nucvaloperpub",
+        bech32PrefixConsAddr: "nucvalcons",
+        bech32PrefixConsPub: "nucvalconspub",
+      },
+      currencies: [
+        {
+          coinDenom: "nucl",
+          coinMinimalDenom: "unucl",
+          coinDecimals: 6,
+        },
+      ],
+      feeCurrencies: [
+        {
+          coinDenom: "nucl",
+          coinMinimalDenom: "unucl",
+          coinDecimals: 6,
+          gasPriceStep: {
+            low: 0.2,
+            average: 0.3,
+            high: 0.4,
+          },
+        },
+      ],
+    },
